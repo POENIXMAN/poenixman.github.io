@@ -1,37 +1,50 @@
-/* styles.css */
-
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles for better consistency */
+body, h1, h2, p, ul, li, a {
     margin: 0;
-    padding: 20px;
-    background-color: #f7f7f7;
+    padding: 0;
 }
 
-h1 {
-    font-size: 32px;
+/* Global styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
     color: #333;
+    line-height: 1.6;
+    margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Page header styles */
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
     text-decoration: underline;
 }
 
+/* Section headers */
 h2 {
     font-size: 24px;
-    color: #555;
-}
-
-p {
-    font-size: 18px;
-    color: #777;
+    color: #007acc; /* Blue accent color */
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    padding-left: 20px;
+/* Subheaders within sections */
+strong {
+    color: #ff6b6b; /* Red accent color */
 }
 
+/* Links */
 a {
-    color: #0078d4;
+    color: #007acc;
     text-decoration: none;
 }
 
@@ -39,3 +52,51 @@ a:hover {
     text-decoration: underline;
 }
 
+/* List styles */
+ul {
+    list-style: none;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Accent lines between sections */
+hr.section-divider {
+    border: 0;
+    border-top: 2px solid #007acc; /* Blue accent color */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Different background colors for alternating sections */
+.section-even {
+    background-color: #f8f8f8;
+}
+
+.section-odd {
+    background-color: #fff;
+}
+
+/* Additional styles for specific sections */
+#education {
+    font-style: italic;
+}
+
+#professional-experience {
+    font-weight: bold;
+}
+
+#leadership-experience {
+    font-style: italic;
+}
+
+#technical-skills {
+    font-weight: bold;
+}
+
+#interests {
+    font-style: italic;
+}
